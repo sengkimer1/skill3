@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.box-con {
+    width: 90%;
+    overflow: hidden;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+
+}
+
+.box1 {
+    padding: 100px;
+    background-color: burlywood;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .box-con {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .box-con {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
